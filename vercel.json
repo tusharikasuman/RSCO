@@ -2,7 +2,7 @@
   "rewrites": [
     { "source": "/aboutus", "destination": "/aboutus.html" },
     { "source": "/services", "destination": "/services.html" },
-    { "source": "/study-Abroad", "destination": "/study-in-german.html" },
+    { "source": "/study-abroad", "destination": "/study-in-german.html" },
     { "source": "/help", "destination": "/faq.html" }
   ]
 }
