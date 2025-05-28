@@ -113,6 +113,13 @@ body {
   }
 }
 
+/*highlighting navbar*/
+
+.nav-links a.active {
+  color: #ebaa11; /* brand gold color */
+}
+
+
 /* =================== WHY US?  =================== */
 .rsco-intro {
   background-color: #f0f4fb;
