@@ -451,6 +451,14 @@ body {
   background-color: #ffffff;
 }
 
+.services-section h1 {
+  font-size: 2.8rem;
+  color: #013e7d;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+
 .services-section p {
   font-size: 18px;
   line-height: 1.7;
