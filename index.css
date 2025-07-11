@@ -858,3 +858,123 @@ h2 {
     padding: 25px 20px;
   }
 }
+
+
+/* =================== AUSHBUILDING SECTION =================== */
+
+/* =================== AUSBILDUNG PAGE SECTION =================== */
+
+/* Main section styling */
+#ausbildung {
+  padding: 60px 20px;
+  background-color: #f0f4fb; /* Consistent light blue-gray background */
+  font-family: Arial, sans-serif;
+}
+
+/* Top-level headings and intro paragraph */
+#ausbildung h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #013e7d; /* Main brand blue */
+  margin-bottom: 10px;
+}
+
+/* This targets the "AUSBILDUNG PROGRAM by RSCO" subtitle */
+#ausbildung > h3 {
+  text-align: center;
+  font-size: 24px;
+  color: #ebaa11; /* Brand gold for highlight */
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+#ausbildung > p {
+  text-align: center;
+  font-size: 18px;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto 30px auto; /* Center the paragraph */
+}
+
+/* Styled horizontal divider */
+#ausbildung hr {
+  border: none;
+  height: 3px;
+  background-color: #ebaa11;
+  width: 80px; /* A shorter, more modern divider */
+  margin: 40px auto;
+  border-radius: 2px;
+}
+
+/* The main content box that holds all the details */
+#ausbildung > div {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #ffffff; /* White card background */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* Soft shadow for depth */
+}
+
+/* Subheadings inside the content box (e.g., "Program Overview") */
+#ausbildung > div h3 {
+  color: #013e7d;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #f0f4fb; /* Subtle separator line */
+}
+
+/* Remove top margin from the very first subheading */
+#ausbildung > div h3:first-of-type {
+  margin-top: 0;
+}
+
+/* Styling for all lists (ordered and unordered) */
+#ausbildung ul,
+#ausbildung ol {
+  padding-left: 20px; /* Standard indentation */
+  line-height: 1.8;
+}
+
+#ausbildung li {
+  color: #333;
+  margin-bottom: 12px; /* Spacing between list items */
+}
+
+#ausbildung li strong {
+  color: #013e7d; /* Make strong tags use the brand blue */
+}
+
+/* Adds a gap to the two-column list for better spacing */
+#ausbildung ul[style*="columns: 2"] {
+  gap: 40px;
+}
+
+/* Apply Now Button styling */
+#ausbildung div[style*="text-align: center"] {
+  margin-top: 40px;
+}
+
+#ausbildung a[href="#contact"] {
+  background-color: #ebaa11;
+  color: #ffffff;
+  padding: 14px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#ausbildung a[href="#contact"]:hover {
+  background-color: #d1980c; /* Darker gold on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
