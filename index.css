@@ -538,7 +538,223 @@ body {
 }
 
 
+/* =================== CAREER COUNSELLING PAGE (career.html) =================== */
 
+#career-page {
+  padding-bottom: 60px;
+}
+
+/* MODIFIED Hero Section with Image */
+.career-hero {
+  background-color: #f0f4fb;
+  padding: 60px 20px;
+}
+
+.career-hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Column 1: Text Content */
+.hero-text-content {
+  flex: 1.2; /* Give text slightly more space */
+  text-align: left;
+}
+
+/* Column 2: Image Content */
+.hero-image-content {
+  flex: 0.8;
+  text-align: center;
+}
+
+.hero-image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Overriding old centered styles for the hero elements */
+.career-hero h1 {
+  font-size: 2.1rem;
+  font-style: italic;
+  font-weight: 600;
+  color: #013e7d;
+  margin-bottom: 15px;
+}
+
+.career-hero h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ebaa11; /* Brand gold */
+  margin-bottom: 15px;
+}
+
+.career-hero p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+
+/* --- THE REST OF THE PAGE STYLING (Unchanged) --- */
+
+/* Main Two-Column Content Grid */
+.content-grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.content-box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  border-top: 4px solid #013e7d;
+}
+
+.content-box h3 {
+  font-size: 1.5rem;
+  color: #013e7d;
+  margin-bottom: 20px;
+}
+
+.content-box ul {
+  list-style: none;
+  padding-left: 5px;
+}
+
+.content-box li {
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Custom checkmark for list items */
+.content-box li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #ebaa11;
+  font-weight: bold;
+}
+
+/* Process Section Styling */
+.process-section {
+  background-color: #fff;
+  padding: 60px 20px;
+}
+
+.process-section h2, .stats-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #013e7d;
+}
+
+.process-steps {
+  list-style: none;
+  counter-reset: process-counter;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.process-steps li {
+  counter-increment: process-counter;
+  margin-bottom: 25px;
+  padding: 20px 20px 20px 70px;
+  position: relative;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border-left: 5px solid #013e7d;
+  line-height: 1.6;
+}
+
+.process-steps li::before {
+  content: counter(process-counter);
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #013e7d;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.process-steps li strong {
+  color: #013e7d;
+  font-weight: 700;
+}
+
+/* Results & Stats Section */
+.stats-section {
+  padding: 60px 20px;
+  background-color: #f0f4fb;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.stats-grid .stat-card {
+  background: #fff;
+  border-bottom: 5px solid #ebaa11;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+}
+.stats-grid h4 {
+  font-size: 2.2rem;
+  color: #013e7d;
+  margin-bottom: 5px;
+}
+.stats-grid p {
+  font-size: 1rem;
+  color: #333;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 820px) {
+  /* Stack the hero columns on mobile */
+  .career-hero-container {
+    flex-direction: column;
+  }
+  
+  /* Center-align hero text on mobile */
+  .hero-text-content, .career-hero h1, .career-hero h2, .career-hero p {
+    text-align: center;
+  }
+  
+  /* Stack the main content grid on mobile */
+  .content-grid-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
 /* =================== FOOTER (SHARED) =================== */
 .footer {
   background-color: #013e7d;
